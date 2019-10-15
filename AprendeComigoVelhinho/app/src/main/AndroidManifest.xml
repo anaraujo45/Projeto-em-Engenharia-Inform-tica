@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asus.aprendecomigovelhinho">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_foreground_acabou"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_foreground_acabou"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".A_Main"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".B_menu"
+            android:screenOrientation="landscape"/>
+
+        <activity
+            android:name=".C_aviso"
+            android:screenOrientation="landscape"/>
+
+        <activity
+            android:name=".D_lista"
+            android:screenOrientation="landscape"/>
+
+        <activity
+            android:name=".E_ex1Port"
+            android:screenOrientation="landscape">
+        <!--<meta-data android:name="android.support.PARENT_ACTIVITY"-->
+            <!--android:value=".D_lista"/>-->
+        </activity>
+
+        <activity
+            android:name=".E_ex2Port"
+            android:screenOrientation="landscape"/>
+
+        <activity
+            android:name=".E_ex3Port"
+            android:screenOrientation="landscape"/>
+
+        <activity
+            android:name=".E_ex4Port"
+            android:screenOrientation="landscape"/>
+
+        <activity
+            android:name=".F_ex1Mat"
+            android:screenOrientation="landscape"/>
+
+        <activity
+            android:name=".F_ex2Mat"
+            android:screenOrientation="landscape"/>
+
+        <activity
+            android:name=".F_ex3Mat"
+            android:screenOrientation="landscape"/>
+
+        <activity
+            android:name=".F_ex4Mat"
+            android:screenOrientation="landscape"/>
+
+        <activity
+            android:name=".G_ex1Estmei"
+            android:screenOrientation="landscape">
+            <!--<meta-data android:name="android.support.PARENT_ACTIVITY"-->
+                <!--android:value=".D_lista"/>-->
+        </activity>
+
+        <activity
+            android:name=".G_ex2Estmei"
+            android:screenOrientation="landscape"/>
+
+        <activity
+            android:name=".G_ex4Estmei"
+            android:screenOrientation="landscape"/>
+
+        <activity
+            android:name=".G_ex3Estmei"
+            android:screenOrientation="landscape"/>
+
+    </application>
+
+</manifest>
