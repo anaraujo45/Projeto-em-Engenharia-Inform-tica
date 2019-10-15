@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.asus.aprendecomigo4t">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".ConfiguracoesIniciais"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Bem_Vindo_1"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Bem_Vindo_2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".AlterarConfiguracoes"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Login"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Menu"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Matematica_1ano_Automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Portugues_1ano_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Estudo_do_Meio_1ano_automaticas"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Estudo_do_Meio_1ano_na_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Portugues_2ano_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Portugues_2ano_na_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Matematica_2ano_na_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Matematica_2ano_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Estudo_do_Meio_2ano_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Estudo_do_Meio_2ano_na_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Matematica_3ano_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Matematica_3ano_na_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Matematica_4ano_na_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Matematica_4ano_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Estudo_Do_Meio_3ano_na_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Estudo_Do_Meio_3ano_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Matematica_1ano_na_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Portugues_3ano_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Portugues_4ano_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Portugues_3ano_na_automatica"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Portugues_4ano_na_automatica"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Portugues_1ano_na_automatica"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Estudo_do_Meio_4ano_na_automatica"
+            android:screenOrientation="landscape"/>
+        <activity android:name=".Estudo_do_Meio_4ano_automatica"
+            android:screenOrientation="landscape">
+        </activity>
+    </application>
+
+</manifest>
