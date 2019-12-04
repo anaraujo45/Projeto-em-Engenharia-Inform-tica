@@ -36,7 +36,7 @@ class F_ex3Mat : AppCompatActivity() {
 
     fun validar(view: View) {
 
-        val url = "http://192.168.1.8:8080/matematica3/naoAutomatica/post"
+        val url = "http://****/matematica3/naoAutomatica/post"
 
         data class NumeroGalinhasInfo(val resposta: String)
         data class NumeroGalinhasRequest(val numeroGalinhas: NumeroGalinhasInfo)
@@ -53,7 +53,7 @@ class F_ex3Mat : AppCompatActivity() {
 
     fun fetchJson(){
 
-        val url = "http://192.168.1.8:8080/matematica3/naoAutomatica/get"
+        val url = "http://****/matematica3/naoAutomatica/get"
 
         val request = Request.Builder().url(url).build()
 
