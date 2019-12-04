@@ -34,9 +34,9 @@ def loginCredenciais():
         response.content_type = 'text/plain'
         return "Pass em falta"
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                  database='AprendeComigo', user='projecto',
-                                  password='FfV7C3ijp5hb')
+    cnx =mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
 
@@ -54,9 +54,9 @@ def loginCredenciais():
 @route('/verificaCredenciais', method = "GET")
 def verificaCredenciais():
     response.content_type = 'application/json;charset=utf-8'
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                      database='AprendeComigo', user='projecto',
-                                      password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
     sql1="SELECT pass FROM AprendeComigo.crianca;"
@@ -78,9 +78,9 @@ def verificaCredenciais():
 @route('/caixaEntrada', method="GET")
 def caixaEntrada():
     response.content_type = 'application/json;charset=utf-8'
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                      database='AprendeComigo', user='projecto',
-                                      password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
     nada = []
@@ -136,9 +136,9 @@ def portugues1NaoAutomaticaPost():
             response.content_type = 'text/plain'
             return "Campo resposta em falta"
 
-        cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                      database='AprendeComigo', user='projecto',
-                                      password='FfV7C3ijp5hb')
+        cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
         cnx_cursor1 = cnx.cursor(dictionary=True)
 
@@ -155,9 +155,9 @@ def portugues1NaoAutomaticaPost():
 @route('/portugues1/naoAutomatica/get', method = "GET")
 def portugues1NaoAutomaticaGet():
     response.content_type = 'application/json;charset=utf-8'
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                  database='AprendeComigo', user='projecto',
-                                  password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
     sql1 = "SELECT resposta FROM AprendeComigo.formulario where id_formulario=4;"
@@ -190,9 +190,9 @@ def portugues2NaoAutomaticaPost():
         response.content_type = 'text/plain'
         return "Campo resposta em falta"
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                  database='AprendeComigo', user='projecto',
-                                  password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
 
@@ -210,9 +210,9 @@ def portugues2NaoAutomaticaPost():
 @route('/portugues2/naoAutomatica/get', method = "GET")
 def portugues2NaoAutomaticaGet():
     response.content_type = 'application/json;charset=utf-8'
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                              database='AprendeComigo', user='projecto',
-                              password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
     sql1 = "SELECT resposta FROM AprendeComigo.formulario where id_formulario=5;"
@@ -245,9 +245,9 @@ def portugues3NaoAutomaticaPost():
         response.content_type = 'text/plain'
         return "Campo resposta em falta"
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                  database='AprendeComigo', user='projecto',
-                                  password='FfV7C3ijp5hb')
+    cnx =mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
 
@@ -264,9 +264,9 @@ def portugues3NaoAutomaticaPost():
 @route('/portugues3/naoAutomatica/get', method = "GET")
 def portugues3NaoAutomaticaGet():
     response.content_type = 'application/json;charset=utf-8'
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                              database='AprendeComigo', user='projecto',
-                              password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
     sql1 = "SELECT resposta FROM AprendeComigo.formulario where id_formulario=6;"
@@ -312,9 +312,9 @@ def portugues4NaoAutomaticaPost():
         response.content_type = 'text/plain'
         return "Campo respostac em falta"
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                  database='AprendeComigo', user='projecto',
-                                  password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
 
@@ -331,9 +331,9 @@ def portugues4NaoAutomaticaPost():
 @route('/portugues4/naoAutomatica/get', method = "GET")
 def portugues4NaoAutomaticaGet():
     response.content_type = 'application/json;charset=utf-8'
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                              database='AprendeComigo', user='projecto',
-                              password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
     sql1 = "SELECT resposta, respostab, respostac FROM AprendeComigo.formulario where id_formulario=7;"
@@ -377,9 +377,9 @@ def estudoMeio1NaoAutomaticaPost():
         response.content_type = 'text/plain'
         return "Campo respostab em falta"
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                  database='AprendeComigo', user='projecto',
-                                  password='FfV7C3ijp5hb')
+    cnx =mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
 
@@ -399,9 +399,9 @@ def estudoMeio1NaoAutomaticaPost():
 def estudoMeio1NaoAutomaticaGet():
     response.content_type = 'application/json;charset=utf-8'
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                              database='AprendeComigo', user='projecto',
-                              password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
     sql1 = "SELECT resposta, respostab FROM AprendeComigo.formulario where id_formulario=8;"
@@ -461,9 +461,9 @@ def estudoMeio2NaoAutomaticaPost():
         response.content_type = 'text/plain'
         return "Campo respostae em falta"
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                   database='AprendeComigo', user='projecto',
-                                   password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
 
@@ -481,9 +481,9 @@ def estudoMeio2NaoAutomaticaPost():
 def estudoMeio2NaoAutomaticaGet():
     response.content_type = 'application/json;charset=utf-8'
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                              database='AprendeComigo', user='projecto',
-                              password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
     sql1 = "SELECT resposta, respostab,respostac,respostad,respostae FROM AprendeComigo.formulario where id_formulario=9;"
@@ -543,9 +543,9 @@ def estudoMeio3NaoAutomaticaPost():
         response.content_type = 'text/plain'
         return "Campo respostae em falta"
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                   database='AprendeComigo', user='projecto',
-                                   password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
 
@@ -564,9 +564,9 @@ def estudoMeio3NaoAutomaticaPost():
 def estudoMeio3NaoAutomaticaGet():
     response.content_type = 'application/json;charset=utf-8'
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                              database='AprendeComigo', user='projecto',
-                              password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
     sql1 = "SELECT resposta, respostab,respostac,respostad,respostae FROM AprendeComigo.formulario where id_formulario=10;"
@@ -606,9 +606,9 @@ def estudoMeio4NaoAutomaticaPost():
         return "Campo respostab em falta"
 
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                   database='AprendeComigo', user='projecto',
-                                   password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
 
@@ -626,9 +626,9 @@ def estudoMeio4NaoAutomaticaPost():
 def estudoMeio4NaoAutomaticaGet ():
     response.content_type = 'application/json;charset=utf-8'
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                  database='AprendeComigo', user='projecto',
-                                  password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
     sql1 = "SELECT resposta, respostab FROM AprendeComigo.formulario where id_formulario=11;"
@@ -692,9 +692,9 @@ def matematica1NaoAutomaticaPost():
         response.content_type = 'text/plain'
         return "Campo respostae em falta"
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                   database='AprendeComigo', user='projecto',
-                                   password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
 
@@ -712,9 +712,9 @@ def matematica1NaoAutomaticaPost():
 def matematica1NaoAutomaticaGet():
     response.content_type = 'application/json;charset=utf-8'
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                  database='AprendeComigo', user='projecto',
-                                  password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
     sql1 = "SELECT resposta, respostab,respostac,respostad,respostae FROM AprendeComigo.formulario where id_formulario=1;"
@@ -756,9 +756,9 @@ def matematica2NaoAutomaticaPost():
         return "Campo respostab em falta"
 
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                   database='AprendeComigo', user='projecto',
-                                   password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
 
@@ -776,9 +776,9 @@ def matematica2NaoAutomaticaPost():
 def matematica2NaoAutomaticaGet():
     response.content_type = 'application/json;charset=utf-8'
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                  database='AprendeComigo', user='projecto',
-                                  password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
     sql1 = "SELECT resposta, respostab FROM AprendeComigo.formulario where id_formulario=2;"
@@ -817,9 +817,9 @@ def matematica3NaoAutomaticaPost():
         response.content_type = 'text/plain'
         return "Resposta em falta"
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                  database='AprendeComigo', user='projecto',
-                                  password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
 
@@ -839,9 +839,9 @@ def matematica3NaoAutomaticaGet():
     response.content_type = 'application/json;charset=utf-8'
 
     #
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                database='AprendeComigo', user='projecto',
-                                password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     # o cursor é responsavel pela interação com a bd
     cnx_cursor1 = cnx.cursor(dictionary=True)
@@ -879,9 +879,9 @@ def matematica4NaoAutomaticaPost():
         response.content_type = 'text/plain'
         return "Campo resposta em falta"
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                   database='AprendeComigo', user='projecto',
-                                   password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
 
@@ -899,9 +899,10 @@ def matematica4NaoAutomaticaPost():
 def matematica4NaoAutomaticaGet():
     response.content_type = 'application/json;charset=utf-8'
 
-    cnx = mysql.connector.connect(host='projecto-mp5.cp7jwa5nhz40.us-east-1.rds.amazonaws.com',
-                                  database='AprendeComigo', user='projecto',
-                                  password='FfV7C3ijp5hb')
+    cnx = mysql.connector.connect(host='**',
+                                      database='***', user='***',
+                                      password='****')
+    
 
     cnx_cursor1 = cnx.cursor(dictionary=True)
     sql1 = "SELECT resposta FROM AprendeComigo.formulario where id_formulario=3;"
@@ -919,4 +920,4 @@ def matematica4NaoAutomaticaGet():
     return json.dumps(coiso12)
 
 
-run(host='192.168.1.8', port=8080, debug=True)
+run(host='****', port=****, debug=True)
