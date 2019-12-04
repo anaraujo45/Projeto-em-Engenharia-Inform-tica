@@ -37,7 +37,7 @@ class D_lista : AppCompatActivity() {
     }
 
     fun fetchJson() {
-        val url = "http://192.168.1.8:8080/caixaVariavel"
+        val url = "http://****/caixaVariavel"
 
         val request = Request.Builder().url(url).build()
 
