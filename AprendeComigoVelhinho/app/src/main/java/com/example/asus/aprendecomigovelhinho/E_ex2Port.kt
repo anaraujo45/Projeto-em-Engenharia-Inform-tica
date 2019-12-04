@@ -39,7 +39,7 @@ class E_ex2Port : AppCompatActivity() {
     }
 
     fun fetchJson(){
-        val url = "http://192.168.1.8:8080/portugues2/naoAutomatica/get"
+        val url = "http://****/portugues2/naoAutomatica/get"
 
         val request = Request.Builder().url(url).build()
 
